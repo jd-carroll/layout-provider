@@ -1,0 +1,93 @@
+<div class="panel-heading">
+  <div class="btn-toolbar my-toolbar" role="toolbar" aria-label="...">
+    <div class="btn-group" role="group" aria-label="...">
+      <button type="button" class="btn btn-default">
+        <span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+    </div>
+    <div class="btn-group" role="group" aria-label="...">
+      <button type="button" class="btn btn-default">
+        <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span></button>
+    </div>
+    <div class="btn-group" role="group" aria-label="...">
+      <button type="button" class="btn btn-default">
+        <span class="glyphicon glyphicon-flag" aria-hidden="true"></span></button>
+    </div>
+  </div>
+  <h2 class="my-page-header">Order Details</h2>
+</div>
+<div class="panel-body myPanelContent">
+  <form id="movieForm" method="post">
+      <div class="form-group">
+          <div class="row">
+              <div class="col-xs-8">
+                  <label class="control-label">Order title</label>
+                  <input type="text" class="form-control" name="title" />
+              </div>
+
+              <div class="col-xs-4 selectContainer">
+                  <label class="control-label">Type</label>
+                  <select class="form-control" name="type">
+                      <option value="">Choose a type</option>
+                      <option value="buy">Buy</option>
+                      <option value="sell">Sell</option>
+                  </select>
+              </div>
+          </div>
+      </div>
+
+      <div class="form-group">
+          <div class="row">
+              <div class="col-xs-4">
+                  <label class="control-label">Order Detail 1</label>
+                  <input type="text" class="form-control" name="detail1" />
+              </div>
+
+              <div class="col-xs-4">
+                  <label class="control-label">Order Detail 2</label>
+                  <input type="text" class="form-control" name="detail2" />
+              </div>
+
+              <div class="col-xs-4">
+                  <label class="control-label">Order Detail 3</label>
+                  <input type="text" class="form-control" name="detail2" />
+              </div>
+          </div>
+      </div>
+
+      <div class="form-group">
+          <div class="row">
+              <div class="col-xs-6">
+                  <label class="control-label">Option 1</label>
+                  <input type="text" class="form-control" name="option1" />
+              </div>
+
+              <div class="col-xs-6">
+                  <label class="control-label">Option 2</label>
+                  <input type="text" class="form-control" name="option2" />
+              </div>
+          </div>
+      </div>
+
+      <div class="form-group">
+          <label class="control-label">Instructions</label>
+          <textarea class="form-control" name="instructions" rows="8"></textarea>
+      </div>
+
+      <div class="form-group">
+          <label class="control-label">Radios</label>
+          <div>
+              <label class="radio-inline">
+                  <input type="radio" name="radios" value="radio1" /> Radio 1
+              </label>
+              <label class="radio-inline">
+                  <input type="radio" name="radios" value="radio2" /> Radio 2
+              </label>
+              <label class="radio-inline">
+                  <input type="radio" name="radios" value="radio3" /> Radio 3
+              </label>
+          </div>
+      </div>
+
+      <button type="submit" class="btn btn-default">Validate</button>
+  </form>
+</div>
